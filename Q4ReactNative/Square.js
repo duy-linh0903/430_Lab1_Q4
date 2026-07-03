@@ -7,9 +7,10 @@ function ClickOnTheSquare(value)
   Alert.alert(value);
 }
 
-export default Square = ({ text }) => (
+const Square = ({ text }) => (
   <View style={[styles.box, { backgroundColor: "#7ce0f9" }]}>
     <Text>{text}</Text>
     <Button title='CLick' onPress={() => ClickOnTheSquare(text)}></Button>
   </View>
 );
+export default Square;
